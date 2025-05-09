@@ -1,0 +1,259 @@
+.darker-grotesque uniquifier {
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    background-color: #0D0F13;
+  } 
+
+   .CarrosselTitle{
+    color: white;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    margin-left: 60px;
+    text-decoration: underline #37E359;
+    @media (max-width:900px) {
+      font-size: 60px;
+      margin-left: 0;
+    }
+    @media (max-width:500px) {
+      font-size: 50px;
+    }
+    @media(max-width: 1300px) {
+      text-align: center;
+    }
+    @media (max-width: 391px) {
+      font-size: 40px;
+      margin-top: 30px;
+    }
+  }
+
+  .CarrosselGamesTitle{
+    color: white;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    text-decoration: underline #37E359;
+
+    @media (max-width: 900px) {
+      font-size: 60px;
+      margin-top: 50px;
+      
+    }
+
+    @media (max-width: 391px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+       @media (max-width: 391px) {
+     padding: 20px;   
+    }
+
+ 
+
+    .btnNav{
+      margin-bottom: -30px;
+      display: flex;
+      gap: 20px;
+
+      @media (max-width: 900px) {
+      margin-top: 40px;
+      
+    }
+
+       @media (max-width: 391px) {
+     margin-top: -2px;   
+    }
+
+      button{
+        background-color: #252525;
+        color: #fff;
+        border: none;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+           @media (max-width: 391px) {
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+    }
+
+        &:hover{
+          background-color: #2121216d;
+        }
+      }
+    }
+  }
+
+  .ContGames{
+    overflow: hidden;
+  }
+
+  
+  .carrossel{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    transition: 0.5s ease;
+    justify-content: space-between; 
+    gap: 130px;
+    margin-bottom: 50px;
+    padding: 0px 50px;
+    
+    @media (max-width: 900px) {
+      gap: 150px;
+    }
+
+    img{
+       width: 100%;
+  height: 350px; /* Altura fixa padronizada */
+  border-radius: 20px;
+  object-fit: cover;
+
+  @media (max-width: 900px) {
+    height: 300px; /* Altura fixa padronizada */
+    width: 300px;
+    object-fit: cover;
+    
+  }
+    }
+
+    .game{
+      color: #fff;
+        position: relative;
+        max-width: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        flex: 0 0 250px;
+
+        @media (max-width: 900px) {
+          width: 100%;
+          
+        }
+        
+        
+
+
+        .btnFav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            border-radius: 50%;
+            top: 15px;
+            right: 10px;
+            background-color: #060606ac;
+            width: 32px;
+            height: 32px;
+
+            @media (max-width: 900px) {
+              top: 10px;
+              right: -30px;
+              
+            }
+
+        }
+
+
+        h1{
+            font-size: 22px;
+        }
+
+        p{
+            color: #ffffff82;
+        }
+
+        .icons{
+            display: flex;
+            gap: 8px;
+            font-size: 18px;
+        }
+
+        .botoes{
+            max-width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            font-size: 18px;
+
+            
+
+            .botao{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 15px;
+                border-radius: 10px;
+                gap: 5px;
+
+                @media (max-width: 1441px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 1369px) {
+                    font-size: 14px;
+                }
+            }
+
+            
+            a{
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            .download{
+                background-color: #37e359;
+                color: #060606;
+                transition: all 0.3s ease;
+
+                svg{
+                    margin-bottom: -5px;
+                }
+
+
+                &:hover{
+                    box-shadow: 0px 0px 10px 4px #37e3598b;
+                    transform: scale(1.03);
+                }
+               
+            }
+
+            .info{
+                background-color: #21242c;
+                color: #fff;
+                transition: all 0.3s ease;
+
+                svg{
+                    margin-bottom: -3px;
+                }
+                
+
+                &:hover{
+                    transform: scale(1.03);
+                }
+            }
+        }
+
+    }
+}
+  

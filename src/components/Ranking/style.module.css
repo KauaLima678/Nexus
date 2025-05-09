@@ -1,0 +1,110 @@
+.darker-grotesque uniquifier {
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.topJogos {
+  margin: 40px auto;
+  padding: 20px 50px;
+  text-align: left;
+
+  h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Darker Grotesque", sans-serif;
+    text-decoration: underline #37E359;
+  }
+}
+
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 660px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gameItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.gameItem:last-child{
+  align-self: center;
+}
+
+.thumbnailWrapper {
+  flex-shrink: 0;
+  margin-right: 12px;
+
+}
+
+.thumbnail {
+  width: 125px;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  button{
+    background-color: #37E359;
+    font-family: "Darker Grotesque", sans-serif;
+    margin-top: 10px;
+    font-size: 19px;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    display: flex;
+    color: #000000;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    } 
+  }
+}
+
+.posicao {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #37E359;
+  font-size: 20px;
+}
+
+.nome {
+  font-size: 18px;
+  margin-bottom: 4px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 30px;
+}
+
+.avaliacao {
+  font-size: 19px;
+  color: #ccc;
+  font-family: "Darker Grotesque", sans-serif;
+}
+  
+

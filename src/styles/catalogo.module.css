@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+  min-height: calc(100vh - 91px);
+
+  .banner {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    img {
+      position: relative;
+      width: 100%;
+      filter: brightness(60%) blur(1px);
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-family: "Darker Grotesque";
+      font-size: 3.5rem;
+      font-weight: 300;
+      position: absolute;
+      color: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-bottom: 4px solid #37e359;
+      font-weight: bold;
+    }
+  }
+}
+
+section{
+    padding: 0px 80px;
+}
+
+.jogosCategoria{
+    color: #fff;
+    .sectionTitle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        span{
+            color: #ffffff4c;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.title{
+    font-size: 2.5rem;
+    text-decoration: underline #37e359;
+}
+
+.ContGames{
+    display: grid; 
+    gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 150px;
+
+    img{
+        max-width: 250px;
+        max-height: 350px;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .game{
+        position: relative;
+        max-width: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+
+        .btnFav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            border-radius: 50%;
+            top: 15px;
+            right: 10px;
+            background-color: #060606ac;
+            width: 32px;
+            height: 32px;
+
+        }
+
+
+        h1{
+            font-size: 22px;
+        }
+
+        p{
+            color: #ffffff82;
+        }
+
+        .icons{
+            display: flex;
+            gap: 8px;
+            font-size: 18px;
+        }
+
+        .botoes{
+            max-width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            font-size: 18px;
+
+            
+
+            .botao{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 15px;
+                border-radius: 10px;
+                gap: 5px;
+
+                @media (max-width: 1441px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 1369px) {
+                    font-size: 14px;
+                }
+            }
+
+            
+            a{
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            .download{
+                background-color: #37e359;
+                color: #060606;
+                transition: all 0.3s ease;
+
+                svg{
+                    margin-bottom: -5px;
+                }
+
+
+                &:hover{
+                    box-shadow: 0px 0px 10px 4px #37e3598b;
+                    transform: scale(1.03);
+                }
+               
+            }
+
+            .info{
+                background-color: #21242c;
+                color: #fff;
+                transition: all 0.3s ease;
+
+                svg{
+                    margin-bottom: -3px;
+                }
+                
+
+                &:hover{
+                    transform: scale(1.03);
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media (max-width: 1294px) {
+    .ContGames{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 993px) {
+    .ContGames{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 900px) {
+
+    section{
+        padding: 0px 50px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ContGames{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 90px;
+        padding: 0 20px;
+        width: 100%;
+        margin-top: 30px;
+
+        img{
+            max-width: 900px;
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .game{
+            width: 100%;
+            max-width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+     
+    }
+}
+
+@media (max-width: 391px) {
+ 
+    .ContGames{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        img{
+            max-width: 300px;
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    
+}
+
+
+
+
+

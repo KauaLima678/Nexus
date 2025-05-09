@@ -1,0 +1,235 @@
+.darker-grotesque uniquifier {
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.destaques {
+  padding: 40px 20px;
+
+  h2 {
+    padding-left: 65px;
+    padding-bottom: 30px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 400;
+    text-decoration: underline #37e359;
+
+    @media (max-width: 900px) {
+      text-align: center;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+       @media (max-width: 391px) {
+        font-size: 40px;
+    }
+  }
+}
+
+.postsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  gap: 30px;
+
+  @media (max-width: 1300px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 90px;
+  }
+  @media (max-width: 680px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.postCard {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Darker Grotesque", sans-serif;
+
+      @media (max-width: 680px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+      }
+
+  img {
+    width: 603px;
+    height: 344px;
+    border-radius: 25px;
+
+    @media (max-width: 391px) {
+      border-radius: 30px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    
+  }
+  }
+  
+
+
+.postContent {
+  padding: 16px;
+  width: 603px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  @media (max-width: 1300px) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 900px) {
+    gap: 30px;
+
+    .readMore {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 391px) {
+    width: auto;
+  }
+}
+
+.title {
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  text-decoration: underline #37e359;
+}
+
+.resumo {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  flex-grow: 1;
+
+  @media (max-width: 1300px) {
+    text-align: center;
+    font-size: 25px;
+    
+  }
+}
+
+.postInfo {
+  color: #cccccc;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  span {
+    font-style: italic;
+    font-family: "Darker Grotesque", sans-serif;
+  }
+}
+
+.readMore {
+  align-self: flex-start;
+  background-color: #37e359;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 12px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: #279e3f;
+  }
+  @media (max-width: 1300px) {
+    justify-self: center;
+  }
+  @media (max-width: 680px) {
+    align-self: center;
+  }
+}
+
+
+    .botoes{
+        max-width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        font-size: 18px;
+
+        
+
+        .botao{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+            border-radius: 10px;
+            gap: 5px;
+
+            @media (max-width: 1441px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 1369px) {
+                font-size: 14px;
+            }
+        }
+
+        
+        a{
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .download{
+            background-color: #37e359;
+            color: #060606;
+            transition: all 0.3s ease;
+
+            svg{
+                margin-bottom: -5px;
+            }
+
+
+            &:hover{
+                box-shadow: 0px 0px 10px 4px #37e3598b;
+                transform: scale(1.03);
+            }
+           
+        }
+
+        .info{
+            background-color: #21242c;
+            color: #fff;
+            transition: all 0.3s ease;
+
+            svg{
+                margin-bottom: -3px;
+            }
+            
+
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+    }

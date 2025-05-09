@@ -1,0 +1,184 @@
+.darker-grotesque uniquifier {
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.topJogos {
+  margin-top: 0px;
+  margin: 40px auto;
+  padding: 20px 50px;
+  text-align: left;
+}
+
+.gamesGrid {
+  display: grid;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 963px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gameItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  font-size: 90px;
+  width: 100%;
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.02);
+  }
+  @media(max-width: 963px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img{
+      width: 70%;
+      height: 100%;
+      align-self: center;
+    }
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+}
+
+.thumbnailWrapper {
+  flex-shrink: 0;
+  margin-right: 12px;
+  @media(max-width: 963px) {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.thumbnail {
+  width: 500px;
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  button{
+    background-color: #37E359;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    color: #000000;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    } 
+  }
+}
+
+.posicao {
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #37E359;
+}
+
+.nome {
+  font-size: 18px;
+  margin-bottom: 4px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 90px;
+}
+
+.avaliacao {
+  color: #ccc;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  @media(max-width: 963px) {
+    font-size: 20px;
+  }
+}
+.bgRedDead {
+  background-image: url('../../images/RedDead2Fundo.png');
+  height: 318PX;
+}
+
+.bgGodOfWar {
+  background-image: url('../../images/ElderRing.png');
+  height: 318PX;
+}
+
+.bgEldenRing {
+  background-image: url('../../images/CiberPunkFundo.png');
+  height: 318PX;
+}
+
+.botao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  gap: 5px;
+
+  @media (max-width: 1441px) {
+      font-size: 16px;
+  }
+
+  @media (max-width: 1369px) {
+      font-size: 14px;
+  }
+}
+
+
+
+
+.download{
+  background-color: #37e359;
+  color: #060606;
+  transition: all 0.3s ease;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  svg{
+      margin-bottom: -5px;
+  }
+
+
+  &:hover{
+      box-shadow: 0px 0px 10px 4px #37e3598b;
+      transform: scale(1.03);
+  }
+ 
+}
+
+.info{
+  color: #fff;
+  transition: all 0.3s ease;
+
+  svg{
+      margin-bottom: -3px;
+  }
+  
+
+  &:hover{
+      transform: scale(1.03);
+  }
+}

@@ -1,0 +1,103 @@
+.darker-grotesque uniquifier {
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.categorias {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  @media (max-width: 1300px) {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+  }
+
+  h2 {
+    font-size: 85px;
+    padding-left: 70px;
+    padding-bottom: 30px;
+    font-weight: 200;
+    text-decoration: underline #37e359;
+    margin-bottom: 10px;
+    font-family: "Darker Grotesque", sans-serif;
+    color: #ffffff;
+
+    @media (max-width: 391px) {
+      text-align: center;
+      padding-left: 0;
+      font-size: 40px;
+      
+    }
+    
+  }
+}
+
+.listaCategorias {
+  display: grid;
+  gap: 20px;  
+  width: 90vw;
+  margin: auto;
+
+  @media (max-width: 1300px) {
+    width: 70vw;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  @media (max-width: 1300px) {
+    width: 30vw;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  a{
+    text-decoration: none;
+    
+  }
+
+ 
+}
+
+.categoria {
+  padding: 20px;
+  transition: transform 0.3s;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  height: 240px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  &:hover {
+    transform: translateY(-5px);
+    
+  }
+
+  @media (max-width: 1300px) {
+ 
+    width: 70vw;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 300;
+  }
+
+}
+
+.iconeCategoria {
+  font-size: 48px;
+  color: #37e359;
+  margin-bottom: 15px;
+  font-family: "Darker Grotesque", sans-serif;
+}

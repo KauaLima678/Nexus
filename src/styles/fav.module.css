@@ -1,0 +1,160 @@
+.ContGames{
+    display: grid; 
+    gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 150px;
+    color: #fff;
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        
+    }
+
+    img{
+        max-width: 250px;
+        max-height: 350px;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .game{
+        position: relative;
+        max-width: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+
+        .btnFav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            border-radius: 50%;
+            top: 15px;
+            right: 10px;
+            background-color: #060606ac;
+            width: 32px;
+            height: 32px;
+
+        }
+
+
+        h1{
+            font-size: 22px;
+        }
+
+        p{
+            color: #ffffff82;
+        }
+
+        .icons{
+            display: flex;
+            gap: 8px;
+            font-size: 18px;
+        }
+
+        .botoes{
+            max-width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+
+            .botao{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 15px;
+                border-radius: 10px;
+                gap: 5px;
+                font-weight: 600;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            .download{
+                background-color: #37e359;
+                color: #060606;
+                transition: all 0.3s ease;
+
+                svg{
+                    margin-bottom: -3px
+                }
+
+                &:hover{
+                    box-shadow: 0px 0px 10px 4px #37e3598b;
+                    transform: scale(1.03);
+                }
+               
+            }
+
+            .info{
+                background-color: #21242c;
+                color: #fff;
+                transition: all 0.3s ease;
+
+                svg{
+                    margin-bottom: -3px
+                }
+
+                &:hover{
+                    transform: scale(1.03);
+                }
+            }
+        }
+
+    }
+}
+
+.title{
+    color: #fff;
+    text-decoration: underline #37e359;
+    text-align: center; 
+    font-size: 40px;
+}
+
+.containerFav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 100px;
+    padding-top: 50px;
+}
+
+@media (max-width: 391px) {
+
+    .containerFav{
+        margin: 0 auto;
+    }
+    .ContGames{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        
+        .game {
+            max-width: 300px;
+            width: 100%;
+            margin: 0 auto;
+          }
+        
+          img {
+            max-width: 300px;
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+          }
+    }
+}
+
+

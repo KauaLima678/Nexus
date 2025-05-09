@@ -1,0 +1,17 @@
+.titleRank {
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-top: 30px;
+    color: #ffffff;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 600;
+    /* text-decoration: underline #37E359; */
+    @media(max-width: 963px) {
+      font-size: 40px;
+      text-align: center;
+      margin: 0;
+      padding-left: 0;
+    }
+  }
