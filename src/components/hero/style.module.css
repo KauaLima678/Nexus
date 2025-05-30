@@ -140,9 +140,9 @@
     gap: 16px;
     margin-top: 20px;
 
-    @media (max-width: 391px) {
+    @media (max-width: 450px) {
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
         
     }
 }

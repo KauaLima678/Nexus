@@ -130,7 +130,7 @@
     padding-top: 50px;
 }
 
-@media (max-width: 391px) {
+@media (max-width: 450px) {
 
     .containerFav{
         margin: 0 auto;

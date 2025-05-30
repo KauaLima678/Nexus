@@ -93,7 +93,7 @@
 .logout {
   position: absolute;
   top: 40px;
-  right: 60px;
+  right: 40px;
   background-color: #c41111;
   color: white;
   padding: 10px 15px;
@@ -304,7 +304,7 @@
 
 }
 
-@media (max-width: 391px) {
+@media (max-width: 450px) {
   .game{
     flex-direction: column;
     padding-bottom: 20px;
@@ -329,7 +329,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 70px;
+    margin-left: 90px;
   }
 
 

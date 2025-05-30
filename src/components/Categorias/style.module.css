@@ -19,7 +19,6 @@
 
   h2 {
     font-size: 85px;
-    padding-left: 70px;
     padding-bottom: 30px;
     font-weight: 200;
     text-decoration: underline #37e359;
@@ -44,12 +43,6 @@
   margin: auto;
 
   @media (max-width: 1300px) {
-    width: 70vw;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-  }
-
-  @media (max-width: 1300px) {
     width: 30vw;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -58,6 +51,15 @@
   a{
     text-decoration: none;
     
+  }
+
+  @media (max-width: 1006px) {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+    @media (max-width: 672px) {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
  
@@ -83,6 +85,14 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+  }
+
+    @media (max-width: 1006px) {
+    width: 40vw;
+  }
+
+     @media (max-width: 675px) {
+    width: 90vw;
   }
 
   h3 {

@@ -236,7 +236,7 @@ section{
     }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 450px) {
  
     .ContGames{
         display: flex;
