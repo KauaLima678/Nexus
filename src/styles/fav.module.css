@@ -130,7 +130,7 @@
     padding-top: 50px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 361px) {
 
     .containerFav{
         margin: 0 auto;
@@ -143,7 +143,7 @@
         width: 100%;
         
         .game {
-            max-width: 300px;
+            min-width: 300px !important;
             width: 100%;
             margin: 0 auto;
           }
@@ -154,6 +154,11 @@
             height: auto;
             object-fit: cover;
           }
+    }
+
+    .botoes{
+        max-width: 350px !important;
+        width: 100% !important;
     }
 }
 
