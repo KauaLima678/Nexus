@@ -1,19 +1,36 @@
-# React.js Template Básico
+# 🎮 Nexus - Catálogo de Jogos
 
-Este projeto serve como um template inicial para aplicações **React.js**. Ele foi criado para ajudar você a começar seu desenvolvimento sem precisar configurar toda a estrutura do zero.
+## 📝 Sobre o Projeto
 
----
-
-## 🎯 Recursos
-
-- **React.js Moderno:** Configurado com a versão mais recente do React.
-- **Estrutura Organizada:** Diretórios e arquivos estruturados para facilitar a escalabilidade.
-- **Configuração Flexível:** Base minimalista que pode ser personalizada conforme as necessidades do seu projeto.
-- **Suporte a ES6+:** Utilização de sintaxe moderna com Babel para transpilar seu código.
+**Nexus** é uma plataforma web interativa de catálogo de jogos desenvolvida como **projeto de estudo** para aprendizado e prática de tecnologias web modernas. A aplicação permite aos usuários explorar, buscar, filtrar e salvar seus jogos favoritos em um ambiente responsivo e intuitivo.
 
 ---
 
-## 🚀 Começando
+## 🎯 Funcionalidades
+
+- **Catálogo Completo:** Navegação por diversos títulos de jogos com informações detalhadas
+- **Sistema de Favoritos (Estático):** Marque e visualize seus jogos favoritos com armazenamento em estado local
+- **Ranking de Jogos:** Visualize os jogos mais populares e bem avaliados
+- **Carrossel Dinâmico:** Visualização elegante dos destaques da plataforma
+- **Perfil do Usuário:** Página personalizada para informações do usuário
+- **Design Responsivo:** Interface adaptada para diferentes tamanhos de tela
+- **Animações Suaves:** Efeitos visuais com partículas para melhor experiência
+
+---
+
+## �️ Tecnologias Utilizadas
+
+- **React.js (v18):** Biblioteca JavaScript para construção de interfaces dinâmicas
+- **React Router DOM (v7):** Navegação entre páginas da aplicação
+- **React Icons (v5):** Biblioteca de ícones para UI
+- **React Tsparticles (v2):** Efeitos de partículas animadas
+- **CSS Modules:** Estilos encapsulados e reutilizáveis
+- **JavaScript ES6+:** Sintaxe moderna para desenvolvimento
+- **HTML5 & CSS3:** Marcação e estilização web
+
+---
+
+## �🚀 Começando
 
 ### Pré-requisitos
 
@@ -67,6 +84,14 @@ base-react/
 ├── package.json           # Configurações do projeto e dependências
 └── README.md              # Este arquivo de documentação
 ```
+
+## ⚠️ Limitações e Notas Importantes
+
+- **Sistema de Favoritos Estático:** A funcionalidade de favoritos utiliza estado local (useState) e não persiste os dados após recarregar a página. Para um ambiente de produção, seria necessário implementar um banco de dados ou localStorage.
+- **Sem Sistema de Filtros:** O projeto não possui funcionalidade de filtros avançados para categorizar os jogos. Os jogos são exibidos em listas estáticas e carrosséis predefinidos.
+- **Dados Mockados:** Todos os dados dos jogos são hardcoded no arquivo de dados, não há integração com API externa.
+
+---
 
 ## 🤝 Contribuição
 
