@@ -96,7 +96,3 @@ base-react/
 ## 🤝 Contribuição
 
 Contribuições são muito bem-vindas! Se você deseja sugerir melhorias, corrigir algum bug ou adicionar novos recursos, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## 📄 Licença
-
-Este projeto está licenciado sob a MIT License.
